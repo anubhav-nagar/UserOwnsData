@@ -54,6 +54,7 @@ UserOwnsData.embedReport = async function (embedParam) {
 
     // Embed Power BI report
     var report = powerbi.embed(UserOwnsData.reportContainer.get(0), reportConfig);
+    // Adding Edit feature 
     $(document).ready(function(){
         $('input[name="add"]').on('click', function() {
             
@@ -67,6 +68,7 @@ UserOwnsData.embedReport = async function (embedParam) {
              }
         });
     });
+    // Adding Bookmark feature
     $(document).ready(function(){
         $('input[name="add2"]').on('click', function() {
             
@@ -134,7 +136,8 @@ UserOwnsData.embedReport = async function (embedParam) {
         background: "#FFFFFF",
         foreground: "#3A6108",
         tableAccent: "#568410"
-  };
+    };
+    // Adding teme feature
     $(document).ready(function(){
         $('input[name="add3"]').on('click', function() {
             
